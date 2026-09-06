@@ -3,8 +3,8 @@ using namespace std;
 
 int main(){
 
-    // int a = 10;
-    // cout<<&a<<'\n';
+    int d = 10;
+    cout<<&d<<'\n';
 
     int a = 30;
     int &b = a;
