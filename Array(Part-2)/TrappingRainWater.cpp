@@ -4,7 +4,7 @@ using namespace std;
 
 int trappingRainWater(int *height , int size){
 
-    // Calculating Left Max Height
+    // Calculating Left Max Boundary
     int leftMax[size];
     leftMax[0] = height[0];
     for(int i = 1 ; i<size ; i++){
