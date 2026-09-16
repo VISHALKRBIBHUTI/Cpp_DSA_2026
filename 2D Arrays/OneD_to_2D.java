@@ -4,6 +4,10 @@ public class OneD_to_2D {
 
         int[][] arr = new int[m][n];
 
+        if (original.length != m * n) {
+            return new int[0][0];
+        }
+
         int ptrofOneD = 0;
 
         for(int i =0; i<m; i++){
@@ -33,10 +37,10 @@ public class OneD_to_2D {
 
     public static void main(String[] args) {
         
-        //int[] arr = {1 , 2 , 3 , 4};
-        int[] arr = {1 , 2 ,3};
-        int m = 1;
-        int n = 3;
+        int[] arr = {1 , 2 , 3 , 4};
+        //int[] arr = {1 , 2 ,3};
+        int m = 2;
+        int n = 2;
 
         int[][] mat = construct2DArray(arr , m , n);
         printMatrix(mat);
