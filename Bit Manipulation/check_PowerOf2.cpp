@@ -1,25 +1,26 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
+bool checkPowerOf2(long long num) {
 
-int checkPowerOf2(int num){
+    if (num == 0) {
+        return false;
+    }
 
-    return (num & (num-1));
+    return (num & (num - 1)) == 0;
 }
 
+int main() {
 
-int main(){
+    long long num;
+    cin >> num;
 
-    int num = 32;
-    int result = checkPowerOf2(num);
-
-    if(result == 0){
-        cout<<num<<" is a Power Of 2 "<<'\n';
-    }else{
-        cout<<num<<" Is Not a Power Of 2"<<'\n';
+    if (checkPowerOf2(num)) {
+        cout << "YES" << '\n';
+    }
+    else {
+        cout << "NO" << '\n';
     }
 
     return 0;
-
-
 }
