@@ -7,7 +7,6 @@ class BankAccount{
     int balance = 0;
 
     public:
-
     void credit(int amount){
 
         if(amount > 0){
