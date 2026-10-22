@@ -44,15 +44,15 @@ int main(){
 
     vector<int> arr = {4 , 5 , 6 ,7 , 0 , 1 , 2};
 
-    int target = 1;
+    int target = 4;
 
     int found = searchInRotatedSorted(arr , 0 , arr.size()-1 , target);
 
-    if(found > 0){
+    if(found >= 0){
         cout<<"Element Found At Index : "<<found<<'\n';
     }
     else{
-        cout<<"Element Found At Index : "<<found<<'\n';
+        cout<<"Element Not Found At Valid Index "<<'\n';
     }
 
 
